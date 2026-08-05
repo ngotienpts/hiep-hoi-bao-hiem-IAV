@@ -2386,25 +2386,19 @@ p {
   white-space: nowrap;
   flex-wrap: nowrap;
   /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
 .navbar-menu-mb .navbar-mb::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
-.navbar-menu-mb .navbar-mb {
-  /* Track */
-}
 .navbar-menu-mb .navbar-mb::-webkit-scrollbar-track {
   background: transparent;
 }
-.navbar-menu-mb .navbar-mb {
-  /* Handle */
-}
 .navbar-menu-mb .navbar-mb::-webkit-scrollbar-thumb {
   background: transparent;
-}
-.navbar-menu-mb .navbar-mb {
-  /* Handle on hover */
 }
 .navbar-menu-mb .navbar-mb::-webkit-scrollbar-thumb:hover {
   background: transparent;
@@ -2449,6 +2443,23 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.navbar-menu-mb--children {
+  padding-right: 20px;
+}
+.navbar-menu-mb--children .navbar-mb .navbar-item:first-child::before {
+  content: none;
+}
+.navbar-menu-mb--children .navbar-mb .navbar-item::before {
+  content: "❯";
+  color: #b80000;
+}
+.navbar-menu-mb--children .navbar-mb .navbar-item:nth-child(n+3) {
+  font-size: 14px;
+  color: #555;
+}
+.navbar-menu-mb--children .navbar-mb .navbar-item:nth-child(n+3)::before {
+  content: none;
 }
 
 .block-primary {
@@ -2601,25 +2612,19 @@ p {
   white-space: nowrap;
   overflow: auto;
   /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
 .breadcrumb-secondary__list::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
-.breadcrumb-secondary__list {
-  /* Track */
-}
 .breadcrumb-secondary__list::-webkit-scrollbar-track {
   background: transparent;
 }
-.breadcrumb-secondary__list {
-  /* Handle */
-}
 .breadcrumb-secondary__list::-webkit-scrollbar-thumb {
   background: transparent;
-}
-.breadcrumb-secondary__list {
-  /* Handle on hover */
 }
 .breadcrumb-secondary__list::-webkit-scrollbar-thumb:hover {
   background: transparent;
@@ -4288,25 +4293,19 @@ p {
     white-space: nowrap;
     overflow: auto;
     /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
   }
   .detail-tags::-webkit-scrollbar {
     width: 0;
     height: 0;
   }
-  .detail-tags {
-    /* Track */
-  }
   .detail-tags::-webkit-scrollbar-track {
     background: transparent;
   }
-  .detail-tags {
-    /* Handle */
-  }
   .detail-tags::-webkit-scrollbar-thumb {
     background: transparent;
-  }
-  .detail-tags {
-    /* Handle on hover */
   }
   .detail-tags::-webkit-scrollbar-thumb:hover {
     background: transparent;
@@ -4367,8 +4366,8 @@ p {
     margin-bottom: 20px;
   }
   .heading-primary,
-  .heading-secondary,
-  .heading-tertiary {
+.heading-secondary,
+.heading-tertiary {
     font-size: 18px;
   }
   .swiper-button-next, .swiper-button-prev {
@@ -4447,7 +4446,7 @@ p {
     zoom: 75% !important;
   }
   header,
-  footer {
+footer {
     zoom: 95% !important;
     position: relative !important;
   }

@@ -491,4 +491,28 @@
     align-items: center;
     justify-content: center;
   }
+
+  &--children {
+    padding-right: 20px;
+    .navbar-mb {
+        .navbar-item {
+            &:first-child::before {
+                content: none;
+            }
+            &::before {
+                content: "❯";
+                color: #b80000;
+            }
+
+            &:nth-child(n+3) {
+                &::before {
+                    content: none;
+                }
+
+                font-size: 14px;
+                color: #555;
+            }
+        }
+    }
+  }
 }
